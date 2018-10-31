@@ -1,0 +1,23 @@
+<!--
+              문자열 : 변수
+  [ngClass]="{active: isActive}"
+  isActive가 true라면 class="active"
+  isActive가 false라면 class=""
+-->
+
+<button class="button" [ngClass]="{active: isActive}"
+(click)="isActive=!isActive;">{{isActive?'활성화':'비 활성화'}}
+</button>
+
+<br/>
+
+<button [ngClass]="myclass" class="xxx">버튼 1</button>
+<button [class]="myclass" class="xxx">버튼 1</button>
+
+<button [ngClass]="'active'">버튼 2</button>
+<button bind-ngClass="myclass">버튼 3</button>
+
+<br/>
+<!-- 예약어 attr -->
+<button [attr.class]="myclass">버튼 4</button>
+<button [class.active]="isActive">버튼 5</button>

@@ -1,0 +1,15 @@
+<h3>student Datas</h3>
+
+<!-- <ng-template ngFor let-idol [ngForOf]="idols">
+  <div class="panel panel-default">
+    <div class="panel-heading">{{idol.name}}</div>
+     <div class="panel-body">
+       <img src="./assets/image/{{idol.image}}" class="img-thumbnail">
+     </div>
+  </div> -->
+
+
+<div *ngFor="let data of datas" class="panel panel-default">
+  <div class="panel-heading"> id: {{data.id}} </div>
+  <div class="panel-body"> name: {{data.name}} </div>
+</div>
